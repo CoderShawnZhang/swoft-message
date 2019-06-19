@@ -1,0 +1,30 @@
+{
+    "name": "swoft-rewrite/swoft-message",
+    "description": "分布式开发，重写swoft框架之 -- Message 模块",
+    "keywords": ["swoft","message"],
+    "license": "MIT",
+    "minimum-stability":"dev",
+    "authors": [
+        {
+            "name": "zhanghongbo",
+            "email": "taobao1875@163.com"
+        }
+    ],
+    "require": {
+        "php":">7.1.0"
+    },
+    "require-dev":{
+        "phpunit/phpunit":"^7.5"
+    },
+    "autoload":{
+        "psr-4":{
+            "SwoftRewrite\\Message\\":"src/"
+        }
+    },
+    "autoload-dev":{
+        "psr-4":{
+            "SwoftRewrite\\Message\\Unit\\":"test/unit/",
+            "SwoftRewrite\\Message\\Tesing\\":"test/testing/"
+        }
+    }
+}
